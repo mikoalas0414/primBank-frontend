@@ -1591,7 +1591,7 @@
           darkMode: !1,
           orange: {
             address: '0xc362Db5548Ea3eB729B0f5530eEd3415A338f7Be',
-            symbol: 'SHEEP',
+            symbol: 'PrimBank',
           },
           wrappedNative: { address: '', symbol: '' },
           usd: { address: '', symbol: '' },

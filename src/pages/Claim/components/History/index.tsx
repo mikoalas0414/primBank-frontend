@@ -14,11 +14,11 @@ interface HistoryRegister {
 export function History({ data }: HistoryProps) {
   return (
     <div id="claim-history">
-      <h2>Claim History</h2>
+      <h2>Histórico de reivindicações</h2>
 
       <div id="custom-table">
         <div id="custom-table-header">
-          <p>Date</p>
+          <p>Data</p>
           <p>USDT</p>
           <p>Primbank</p>
         </div>

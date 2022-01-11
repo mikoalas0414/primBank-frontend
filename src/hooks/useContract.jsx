@@ -1,6 +1,5 @@
 import { useMemo } from 'react'
 import { useWeb3 } from './useWeb3'
-import ERC20_ABI from '../assets/abis/ERC20.json'
 import PRIMBANK_ABI from '../assets/abis/PrimBank.json'
 import SWAP_ABI from '../assets/abis/PrimSwap.json'
 
@@ -30,5 +29,8 @@ export const useSwap = (address) => {
 
 export const useERC20 = (address) => {
   const { web3 } = useWeb3()
-  return useMemo(() => getContract(ERC20_ABI, address, web3), [address, web3])
+  return useMemo(
+    () => getContract(PRIMBANK_ABI, PRIMBANK_ABI.abi.address, web3),
+    [web3],
+  )
 }

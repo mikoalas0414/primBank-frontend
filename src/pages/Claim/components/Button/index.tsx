@@ -2,7 +2,7 @@ import './style.scss'
 import {
   useEagerConnect,
   useWalletModal,
-  useWeb3,
+  useClaimRewards,
 } from '../../../../main/index'
 interface ButtonProps {
   text: string
@@ -12,14 +12,21 @@ interface ButtonProps {
 export function Button({ text, buttonStyle }: ButtonProps) {
   useEagerConnect()
   const { setOpen, deactivate } = useWalletModal()
-  const { connected } = useWeb3()
+  const { claim } = useClaimRewards()
+
+  function handleOnClick() {
+    if (text === 'Conectar') {
+      setOpen(true)
+    } else if (text === 'Claim') {
+      claim()
+    } else {
+      deactivate()
+    }
+  }
 
   return (
     <div id="claim-button">
-      <button
-        onClick={() => (connected ? deactivate() : setOpen(true))}
-        className={buttonStyle}
-      >
+      <button onClick={() => handleOnClick()} className={buttonStyle}>
         {text}
       </button>
     </div>

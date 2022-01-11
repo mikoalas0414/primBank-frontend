@@ -67,19 +67,19 @@ export function Claim() {
           <img src={theterLogoImg} alt="theter logo" />
           <span>{totalRewards}</span>
 
-          <p>USDT rewards Generated for Holders</p>
+          <p>Recompensas USD para os investidores</p>
         </div>
         <div id="claim-area">
           <div className="grid-2-col" id="first-section">
             <CommumCard
-              title="VIEW CHART"
+              title="Visualizar gráfico"
               textCenter="0.000000003"
               textBottom="0.0014"
               type="top-button"
             />
 
             <CommumCard
-              title="Holdings"
+              title="Titulares"
               textCenter="0"
               textBottom="0.00"
               type="big-center"
@@ -88,7 +88,7 @@ export function Claim() {
 
           <div className="grid-2-col" id="second-section">
             <CommumCard
-              title="Unclaimed"
+              title="Não reivindicado"
               textCenter={withdrawableDividends}
               extraText="USDT"
               textBottom="0.00014"
@@ -97,7 +97,7 @@ export function Claim() {
 
             <div id="banked-history">
               <CommumCard
-                title="Banked"
+                title="Depositado"
                 textCenter="0.0000"
                 extraText="USDT"
                 textBottom="0.00014"
