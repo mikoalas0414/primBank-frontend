@@ -6,7 +6,9 @@ export function Button() {
     <div className="container box_button d-flex justify-content-center">
       <Link to="/swap">
         <button className={styles.button + ' d-flex justify-content-center'}>
-          <span className={styles.textButton}>Abrir Swap </span>
+          <span style={{ color: 'black' }} className={styles.textButton}>
+            Abrir Swap{' '}
+          </span>
         </button>
       </Link>
     </div>

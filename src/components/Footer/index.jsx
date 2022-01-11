@@ -51,7 +51,7 @@ export function Footer() {
 
               <p>{result}</p>
               <button type="submit">
-                <span>SE INSCREVER</span>
+                <span style={{ color: 'black' }}>SE INSCREVER</span>
               </button>
             </form>
           </Col>

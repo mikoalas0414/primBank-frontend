@@ -59,7 +59,7 @@ export function Banner() {
               styles.botoes + ' col-md-12 d-flex justify-content-center'
             }
           >
-            <Button text="BUY NOW" filled />
+            <Button style={{ color: 'black' }} text="BUY NOW" filled />
             <Button text="CLAIM REWARDS" outlined />
           </div>
         </div>
