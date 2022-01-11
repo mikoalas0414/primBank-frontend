@@ -59,9 +59,15 @@ export function Header() {
               )}
 
               {connected ? (
-                <span style={{ fontSize: '14px', marginLeft: '20px' }}>
+                <span
+                  style={{
+                    fontSize: '14px',
+                    marginLeft: '20px',
+                    fontWeight: 'bold',
+                  }}
+                >
                   {' '}
-                  Balance: {displayBalance}
+                  Balance: {displayBalance ? displayBalance : '0'}
                 </span>
               ) : (
                 ''
