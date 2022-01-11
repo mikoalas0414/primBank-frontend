@@ -104,6 +104,10 @@ button {
   width: 670px;
   height: 292px;
 }
+#swap-area #select-token-area div select {
+  color: black !important;
+  font-weight: bold !important;
+}
 
 @media (max-width: 768px) {
   #how-to-buy > div > div:nth-child(1) > div > div:nth-child(1) > video {
