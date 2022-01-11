@@ -41,7 +41,7 @@ Os arquivos do back-end (contratos inteligentes) desse projeto se encontra nesse
 
 Para reproduzir em sua máquina, siga os passos abaixo:
 
-# Para instalar e reproduzir esse projeto localmente com Ganache siga: 
+# Para instalar e reproduzir esse projeto localmente siga:
 
 1. Clone o repositório 
 
