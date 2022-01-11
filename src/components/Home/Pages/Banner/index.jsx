@@ -17,6 +17,7 @@ export function Banner() {
               flexDirection: 'column',
               alignItems: 'start',
               justifyContent: 'start',
+              marginBottom: '50px',
             }}
             className="imgs col-md-6"
           >
@@ -52,7 +53,7 @@ export function Banner() {
           <div
             style={{
               position: 'relative',
-              marginTop: '90px',
+              marginBottom: '230px',
             }}
             className={
               styles.botoes + ' col-md-12 d-flex justify-content-center'
