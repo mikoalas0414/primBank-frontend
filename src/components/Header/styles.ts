@@ -30,3 +30,9 @@ export const Content = styled.div`
     }
   }
 `
+
+export const WalletBalance = styled.span`
+  font-size: '14px',
+   margin-left: '20px',
+   font-weight: 'bold',
+`
