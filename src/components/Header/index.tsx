@@ -1,4 +1,4 @@
-import { Container, Content } from './styles'
+import { Container, Content, WalletBalance } from './styles'
 import logo from '../../assets/logo.png'
 import {
   useEagerConnect,
@@ -7,6 +7,7 @@ import {
   useTokenBalance,
 } from '../../main/index'
 import wallet from '../../assets/wallet.png'
+import { fontWeight } from '@material-ui/system'
 export function Header() {
   useEagerConnect()
   const { setOpen, deactivate } = useWalletModal()
@@ -41,34 +42,54 @@ export function Header() {
               Dashboard
             </a>
             <button
-              style={{
-                marginLeft: '20px',
-              }}
               className="btn btn-outline-warning"
               onClick={() => (connected ? deactivate() : setOpen(true))}
             >
               {connected ? 'Disconnect' : 'Connect Wallet'}
 
               {connected ? (
-                <span style={{ fontSize: '15px', marginLeft: '10px' }}>
-                  <img src={wallet} alt="wallet" width="20" height="20" />:{' '}
-                  {_account}
+                <span
+                  className="spanButton "
+                  style={{
+                    fontSize: '15px',
+                    marginLeft: '10px',
+                    color: '#017451',
+                    fontWeight: 'bold',
+                  }}
+                >
+                  <img
+                    src={wallet}
+                    alt="wallet"
+                    width="20"
+                    height="20"
+                    style={{ color: '#a70000', fontWeight: 'bold' }}
+                  />
+                  : {_account}
                 </span>
               ) : (
                 ''
               )}
 
+              <span
+                style={{
+                  marginLeft: '1px',
+                  color: '#ee0c0c',
+                  fontWeight: 'bold',
+                }}
+              >
+                {' '}
+                |
+              </span>
               {connected ? (
-                <span
+                <WalletBalance
                   style={{
-                    fontSize: '14px',
-                    marginLeft: '20px',
-                    fontWeight: 'bold',
+                    color: '#017451',
+                    marginLeft: '4px',
                   }}
+                  className="spanButton "
                 >
-                  {' '}
-                  Balance: {displayBalance ? displayBalance : '0'}
-                </span>
+                  PRIMS: {displayBalance ? displayBalance : '0'}
+                </WalletBalance>
               ) : (
                 ''
               )}

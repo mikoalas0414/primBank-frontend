@@ -24,6 +24,14 @@ export const Content = styled.div`
           color: white;
         }
       }
+
+      button {
+        margin-left: 10px;
+      }
+      button:hover {
+        color: black;
+        font-weight: bold;
+      }
     }
 
     @media (min-width: 481px) and (max-width: 767px) {
@@ -35,4 +43,6 @@ export const WalletBalance = styled.span`
   font-size: '14px',
    margin-left: '20px',
    font-weight: 'bold',
+   
+ 
 `
