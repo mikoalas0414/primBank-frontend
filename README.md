@@ -5,13 +5,13 @@
 
 <p align="center">
   <a href="https://www.oprimorico.com.br/">
-    <img src="https://github.com/skyxcripto/primbank-contracts/blob/main/public/favicon.png" alt="Logo">
+    <img src="https://github.com/skyxcripto/primBank-frontend/blob/main/public/print.png" alt="Logo">
   </a>
 
   <h3 align="center">Project Test OsPrimos | PrimBank Front End Dapp </h3>
 </p>
 
-
+- Prints 
 
 <!-- ABOUT THE PROJECT -->
 
@@ -56,15 +56,6 @@ yarn ou npm i
 ```sh
 yarn start 
 ```
-
-```
-<p align="center">
-  <a href="https://www.oprimorico.com.br/">
-    <img src="https://github.com/skyxcripto/primbank-contracts/blob/main/public/deploy.png"  alt="Logo">
-  </a>
-
-  <h3 align="center">Project Test OsPrimos | PrimBank Contracts </h3>
-</p>
 
 ## Contato
 
