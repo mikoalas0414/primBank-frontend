@@ -1,15 +1,22 @@
 import './style.scss'
-import { Button } from '../Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown, faCog } from '@fortawesome/free-solid-svg-icons'
 
 export function SwapArea() {
+  function handleSwap() {
+    alert('Parabens a troca foi realizada com sucesso!')
+  }
   return (
     <>
       <div id="swap-area">
         <div id="select-token-area">
           <div>
-            <Button text="Select A Token" icon />
+            <label>Selecione um Token:</label>
+            <select id="swap-button" name="month">
+              <option value="1">BNB</option>
+              <option value="2"> PrimBank</option>
+            </select>
+
             <p>0.0</p>
           </div>
         </div>
@@ -18,10 +25,12 @@ export function SwapArea() {
           <div id="swap-arrow">
             <FontAwesomeIcon icon={faArrowDown} />
           </div>
-          <p id="logo">Primbank.</p>
-          <p id="Primbank-quantity">0</p>
+          <p id="logo">passive.</p>
+
+          <input id="passive-quantity" type="number" name="quantity" />
+
           <div id="footer">
-            <p>Balance: 0 Primbank</p>
+            <p>Balance: 0 Passive</p>
           </div>
         </div>
 
@@ -36,7 +45,16 @@ export function SwapArea() {
           </div>
         </div>
       </div>
-      <Button text="Fiat On-Ramp" />
+      <div id="swap-button">
+        <button
+          type="submit"
+          onClick={() => {
+            handleSwap()
+          }}
+        >
+          Swap
+        </button>
+      </div>
     </>
   )
 }

@@ -12,7 +12,7 @@ interface ButtonProps {
   icon?: boolean
 }
 
-export function Button({ text, icon }: ButtonProps) {
+export function Button({ text, icon, ...rest }: ButtonProps) {
   useEagerConnect()
   const { setOpen, deactivate } = useWalletModal()
   const { connected } = useWeb3()
