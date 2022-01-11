@@ -12,7 +12,7 @@ export function Button({ text, filled, outlined }: ButtonProps) {
     <>
       {filled ? (
         <a href="https://google.com/">
-          <button className={styles.filled}>{text}</button>{' '}
+          <button  className={styles.filled}>{text}</button>{' '}
         </a>
       ) : (
         <Link to="/dashboard">
