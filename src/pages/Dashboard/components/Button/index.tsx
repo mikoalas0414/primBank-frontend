@@ -19,22 +19,9 @@ export function Button({ text, icon }: ButtonProps) {
   //use const { account } = useWeb3(); to get the account address in value
   //use Hooks account for detail address Users
 
-  function handleOnClick() {
-    if (text === 'Connect' || text === 'Disconnect') {
-      try {
-        if (connected) {
-          deactivate()
-        } else {
-          setOpen(true)
-        }
-      } catch (error) {
-        console.log(error)
-      }
-    }
-  }
   return (
     <div id="swap-button">
-      <button onClick={() => handleOnClick()}>
+      <button onClick={() => (connected ? deactivate() : setOpen(true))}>
         {text} {icon && <FontAwesomeIcon icon={faChevronDown} />}
       </button>
     </div>

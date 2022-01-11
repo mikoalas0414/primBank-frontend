@@ -47,7 +47,7 @@ export function Footer() {
           <Col md={3}>
             <form onSubmit={handleSubmit(onSubmit)}>
               <h5 className={styles.formTitle}>Assine a nossa newsletter</h5>
-              <input clasName={styles.inputbutton} {...register('you mail')} />
+              <input className={styles.inputbutton} {...register('you mail')} />
 
               <p>{result}</p>
               <button type="submit">

@@ -1,6 +1,6 @@
 import { Row } from 'react-bootstrap'
 import styles from './styles.module.css'
-import logo from '../../../../../assets/Exchanges/Logo.svg'
+import logo from '../../../../../assets/logo/primbank.svg'
 
 export default function Logo() {
   return (

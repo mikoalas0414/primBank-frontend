@@ -6,7 +6,7 @@ export function SubTitle() {
       A rede Ethereum e Binance já facilita inúmeros projetos com real
       aplicações mundiais, promovendo ainda mais a inovação e a adoção. Por
       causa de isso, acreditamos que o Ether/BNB está significativamente
-      subvalorizado, então PrimBank os detentores são recompensados ​​com
+      subvalorizado, então PrimBank os investidores são recompensados ​​com
       reflexões de Éter/BNB.
     </h3>
   )

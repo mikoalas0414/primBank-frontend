@@ -9,7 +9,7 @@ import PRIMBANK_ABI from '../assets/abis/PrimBank.json'
 export const ZERO_BALANCE = new BigNumber(0)
 
 export const useClaimRewards = (requiredClaimedState) => {
-  const BankUSDAddress = '0x3039f0774E486CcC89bc66dE942C35ca6f296d4A'
+  const BankUSDAddress = '0x0f4de3eF051AA3d982DA7975ac1Be17eC802EaBb'
   const contractBANKUSD = useToken(BankUSDAddress, PRIMBANK_ABI.abi)
 
   const [claimBalance, setclaimBalance] = useState(ZERO_BALANCE)
@@ -49,7 +49,7 @@ export const useClaimRewards = (requiredClaimedState) => {
     try {
       setClaimState(STATE.BUSY)
       contractBANKUSD.options.address =
-        '0x3039f0774E486CcC89bc66dE942C35ca6f296d4A'
+        '0x0f4de3eF051AA3d982DA7975ac1Be17eC802EaBb'
 
       await contractBANKUSD.methods
         .claim()

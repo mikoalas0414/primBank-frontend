@@ -9,23 +9,6 @@ const ModalManager = ({ open, close, ...props }) => {
   const { config } = useConfig()
 
   return (
-    // <Dialog
-    //     open={open}
-    //     onClose={close}
-    //     maxWidth={"xl"}
-    //     BackdropProps={{
-    //         style: {
-    //             backgroundColor: "rgba(0, 0, 0, 0.7)",
-    //         },
-    //     }}
-    //     // disableBackdropClick
-    //     PaperProps={{
-    //         style: {
-    //             overflow: "visible",
-    //             borderRadius: 15,
-    //         },
-    //     }}
-    // >
     <ReactModal
       isOpen={open}
       onRequestClose={() => {
@@ -34,6 +17,7 @@ const ModalManager = ({ open, close, ...props }) => {
       className={config.darkMode ? styles.darkModal : styles.modal}
       overlayClassName={styles.overlay}
       parentSelector={() => document.body}
+      ariaHideApp={false}
     >
       <CloseIcon
         className={config.darkMode ? styles.darkCloseIcon : styles.closeIcon}

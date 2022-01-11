@@ -1,5 +1,8 @@
 .bg {
-  background-image: url('../../assets/background_home.png');
+  background: #000000;
+  background-image: url('../../assets/fundo.png'); /* fallback */
+  background-image: url('../../assets/fundo.png'),
+    linear-gradient(rgba(235, 195, 18, 0.2), rgba(0, 0, 0, 0.4)); /* W3C */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

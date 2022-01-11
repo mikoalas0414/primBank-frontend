@@ -25,12 +25,12 @@ export function SwapArea() {
           <div id="swap-arrow">
             <FontAwesomeIcon icon={faArrowDown} />
           </div>
-          <p id="logo">passive.</p>
+          <p id="logo">PrimBank.</p>
 
           <input id="passive-quantity" type="number" name="quantity" />
 
           <div id="footer">
-            <p>Balance: 0 Passive</p>
+            <p>Balance: 0 PrimBank</p>
           </div>
         </div>
 

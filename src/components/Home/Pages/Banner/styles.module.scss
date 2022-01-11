@@ -39,6 +39,27 @@
   display: block;
 }
 
+.img1 {
+  position: relative;
+  border: 1px solid #000;
+  overflow: hidden;
+  width: 400px;
+  margin: 100px;
+}
+
+.img1 img {
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.img1:hover img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
 .paragraph {
   position: relative;
   top: 200px;
@@ -134,7 +155,7 @@
 .outlined {
   border: 0;
   background: transparent;
-  border: 1px solid var(--purple);
+
   border-radius: 0.2rem;
   padding: 0.5rem 1rem;
   color: #fff;

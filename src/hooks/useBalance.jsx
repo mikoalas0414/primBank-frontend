@@ -7,7 +7,7 @@ import { useWeb3 } from './useWeb3'
 import PRIMBANK_ABI from '../assets/abis/PrimBank.json'
 
 export const useTokenBalance = (address, decimals = '18') => {
-  const tokenAddress = '0x3039f0774E486CcC89bc66dE942C35ca6f296d4A'
+  const tokenAddress = '0x0f4de3eF051AA3d982DA7975ac1Be17eC802EaBb'
   const contract = useToken(tokenAddress, PRIMBANK_ABI.abi)
   const [balance, setBalance] = useState(undefined)
   const [displayBalance, setDisplayBalance] = useState(undefined)
@@ -17,7 +17,7 @@ export const useTokenBalance = (address, decimals = '18') => {
 
   useEffect(() => {
     const fetch = async () => {
-      contract.options.address = '0x3039f0774E486CcC89bc66dE942C35ca6f296d4A'
+      contract.options.address = '0x0f4de3eF051AA3d982DA7975ac1Be17eC802EaBb'
       const bal = await contract.methods.balanceOf(account).call()
       setBalance(new BigNumber(bal))
       setDisplayBalance(toLower(bal, decimals).toNumber().toFixed(2))
@@ -32,7 +32,7 @@ export const useTokenBalance = (address, decimals = '18') => {
 }
 
 export const useRewardsbalance = (address, decimals = '18') => {
-  const tokenAddress = '0x3039f0774E486CcC89bc66dE942C35ca6f296d4A'
+  const tokenAddress = '0x0f4de3eF051AA3d982DA7975ac1Be17eC802EaBb'
   const contract = useToken(tokenAddress, PRIMBANK_ABI.abi)
   const { fastRefresh } = useRefresh()
 
@@ -52,7 +52,7 @@ export const useRewardsbalance = (address, decimals = '18') => {
 
   useEffect(() => {
     const fetch = async () => {
-      contract.options.address = '0x3039f0774E486CcC89bc66dE942C35ca6f296d4A'
+      contract.options.address = '0x0f4de3eF051AA3d982DA7975ac1Be17eC802EaBb'
       const result = await contract.methods
         .getAccountDividendsInfo(account)
         .call()
@@ -102,7 +102,7 @@ export const useRewardsbalance = (address, decimals = '18') => {
 }
 
 export const useTotalRewards = (address, decimals = '18') => {
-  const tokenAddress = '0x3039f0774E486CcC89bc66dE942C35ca6f296d4A'
+  const tokenAddress = '0x0f4de3eF051AA3d982DA7975ac1Be17eC802EaBb'
   const contract = useToken(tokenAddress, PRIMBANK_ABI.abi)
   const [balance, setBalance] = useState(undefined)
   const [totalRewards, setTotalRewards] = useState(undefined)
@@ -110,7 +110,7 @@ export const useTotalRewards = (address, decimals = '18') => {
 
   useEffect(() => {
     const fetch = async () => {
-      contract.options.address = '0x3039f0774E486CcC89bc66dE942C35ca6f296d4A'
+      contract.options.address = '0x0f4de3eF051AA3d982DA7975ac1Be17eC802EaBb'
       const bal = await contract.methods.getTotalDividendsDistributed().call()
 
       setBalance(new BigNumber(bal))

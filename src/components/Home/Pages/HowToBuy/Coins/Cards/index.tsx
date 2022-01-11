@@ -81,12 +81,14 @@ export function CardA() {
             </Col>
             <Col xs={12} md={8}>
               <TextContent>
-                <p>Download & setup MetaMask or TrustWallet</p>
+                <p style={{ fontWeight: 'bold' }}>
+                  Baixe e configure MetaMask ou TrustWallet
+                </p>
                 <p>
-                  Download <a href="https://metamask.io/">MetaMask</a> (a crypto
-                  wallet in form of a browser extension) or TrustWallet (an app
-                  for your phone). Make sure you are connected to Ethereum
-                  MainNet.{' '}
+                  Baixe <a href="https://metamask.io/">MetaMask</a> (uma wallet
+                  na forma de uma extensão do navegador) ou TrustWallet (um
+                  aplicativo para o seu telefone). Verifique se você está
+                  conectado ao Ethereum MainNet.{' '}
                 </p>
               </TextContent>
             </Col>
@@ -122,11 +124,13 @@ export function CardB() {
             </Col>
             <Col xs={12} md={8}>
               <TextContent>
-                <p>Buy and send Ether to MetaMask</p>
+                <p style={{ fontWeight: 'bold' }}>
+                  Compre e envie Ether para MetaMask
+                </p>
                 <p>
-                  Buy Ether on an exchange (i.e. Binance, Kraken, Coinbase
-                  etc.). Transfer the Ether to your MetaMask wallet address.
-                  Ethereum addresses start with a "0x".{' '}
+                  Compre Ether em uma exchange (ou seja, Binance, Kraken,
+                  Coinbase etc.). Transfira o Ether para o endereço da sua
+                  carteira MetaMask. Os endereços Ethereum começam com "0x".{' '}
                 </p>
               </TextContent>
             </Col>
@@ -162,12 +166,14 @@ export function CardC() {
             </Col>
             <Col xs={12} md={8}>
               <TextContent>
-                <p>Head on to PancakeSwap and swap for $Primbank</p>
+                <p style={{ fontWeight: 'bold' }}>
+                  Vá para PancakeSwap e troque por $ Primbank
+                </p>
                 <p>
-                  <a href="https://pancakeswap.finance/">Click here </a> to head
-                  on over to PancakeSwap or use this address to select Primbank.
-                  Set the slippage tolerance to 12% (sometimes it may be a bit
-                  more, depending on how much demand there is).{' '}
+                  <a href="https://pancakeswap.finance/">Clique aqui </a> para
+                  ir para PancakeSwap, copie e cole o endereço do contrato e
+                  defina a tolerância de deslizamento para 12% (às vezes pode
+                  ser um pouco mais, dependendo da demanda).{' '}
                 </p>
               </TextContent>
             </Col>
@@ -203,10 +209,13 @@ export function CardD() {
             </Col>
             <Col xs={12} md={8}>
               <TextContent>
-                <p>View $Primbank and HODL</p>
+                <p style={{ fontWeight: 'bold' }}>
+                  Veja $Primbank e seja um investidor
+                </p>
                 <p>
-                  Swap Ether for Primbank. Now you need to add Primbank to your
-                  MetaMask or Trust Wallet to view your $Primbank. Lastly HODL!{' '}
+                  Troque o Ether pelo Primbank. Agora você precisa adicionar o
+                  Primbank ao seu MetaMask ou Trust Wallet para visualizar seu
+                  $Primbank.
                 </p>
               </TextContent>
             </Col>

@@ -1,7 +1,14 @@
 import { Container, Content } from './styles'
 import logo from '../../assets/logo.png'
-
+import { useEagerConnect, useWeb3, useWalletModal } from '../../main/index'
+import wallet from '../../assets/wallet.png'
 export function Header() {
+  useEagerConnect()
+  const { setOpen, deactivate } = useWalletModal()
+  const { connected, account } = useWeb3()
+
+  var _account = account?.toString().slice(0, 5)
+
   return (
     <Container className="navbar navbar-expand-lg ">
       <Content>
@@ -30,6 +37,24 @@ export function Header() {
             <a href="/dashboard" className="navbar-text nav-link">
               Dashboard
             </a>
+            <button
+              style={{
+                marginLeft: '20px',
+              }}
+              className="btn btn-outline-warning"
+              onClick={() => (connected ? deactivate() : setOpen(true))}
+            >
+              {connected ? 'Disconnect' : 'Connect Wallet'}
+
+              {connected ? (
+                <span style={{ fontSize: '15px', marginLeft: '10px' }}>
+                  <img src={wallet} alt="wallet" width="20" height="20" />:{' '}
+                  {_account}
+                </span>
+              ) : (
+                ''
+              )}
+            </button>{' '}
           </ul>
         </nav>
       </Content>

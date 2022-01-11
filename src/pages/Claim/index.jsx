@@ -106,7 +106,11 @@ export function Claim() {
 
               <History data={fakeHistoryData} />
             </div>
-            <Button text="Claim" buttonStyle="full-width"></Button>
+            <Button
+              style={{ color: 'black', fontWeight: 'bold' }}
+              text="Claim"
+              buttonStyle="full-width"
+            ></Button>
           </div>
         </div>
       </div>
