@@ -1,11 +1,17 @@
 import { Container, Content } from './styles'
 import logo from '../../assets/logo.png'
-import { useEagerConnect, useWeb3, useWalletModal } from '../../main/index'
+import {
+  useEagerConnect,
+  useWeb3,
+  useWalletModal,
+  useTokenBalance,
+} from '../../main/index'
 import wallet from '../../assets/wallet.png'
 export function Header() {
   useEagerConnect()
   const { setOpen, deactivate } = useWalletModal()
   const { connected, account } = useWeb3()
+  const { displayBalance } = useTokenBalance()
 
   var _account = account?.toString().slice(0, 5)
 
@@ -28,9 +34,6 @@ export function Header() {
             <a href="#features" className="navbar-text nav-link">
               Conheça o projeto
             </a>
-            <a href="#roadmap" className="navbar-text nav-link">
-              Caminho da Estrada
-            </a>
             <a href="#how-to-buy" className="navbar-text nav-link">
               Como comprar
             </a>
@@ -50,6 +53,15 @@ export function Header() {
                 <span style={{ fontSize: '15px', marginLeft: '10px' }}>
                   <img src={wallet} alt="wallet" width="20" height="20" />:{' '}
                   {_account}
+                </span>
+              ) : (
+                ''
+              )}
+
+              {connected ? (
+                <span style={{ fontSize: '14px', marginLeft: '20px' }}>
+                  {' '}
+                  Balance: {displayBalance}
                 </span>
               ) : (
                 ''
