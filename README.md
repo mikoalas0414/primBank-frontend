@@ -22,6 +22,8 @@ para troca de ativos.
 <br/><br />
 
 
+Os arquivos do back-end (contratos inteligentes) desse projeto se encontra nesse <a href="https://github.com/skyxcripto/primbank-contracts">repositório</a>. 
+
 ### Feito Com
 
 - React
