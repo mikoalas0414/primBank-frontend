@@ -7,7 +7,7 @@ import {
   useTokenBalance,
 } from '../../main/index'
 import wallet from '../../assets/wallet.png'
-import { fontWeight } from '@material-ui/system'
+
 export function Header() {
   useEagerConnect()
   const { setOpen, deactivate } = useWalletModal()
