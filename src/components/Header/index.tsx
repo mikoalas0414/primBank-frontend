@@ -15,7 +15,7 @@ export function Header() {
           </a>
 
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-            <a href="./" className="navbar-text nav-link">
+            <a href="/" className="navbar-text nav-link">
               Home
             </a>
             <a href="#features" className="navbar-text nav-link">
@@ -26,6 +26,9 @@ export function Header() {
             </a>
             <a href="#how-to-buy" className="navbar-text nav-link">
               Como comprar
+            </a>
+            <a href="/dashboard" className="navbar-text nav-link">
+              Dashboard
             </a>
           </ul>
         </nav>

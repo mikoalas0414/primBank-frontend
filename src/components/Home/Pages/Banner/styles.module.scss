@@ -4,9 +4,15 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: auto;
-  top: 200px;
+  width: 400px;
+  height: 350px;
+  top: 100px;
+  left: 38%;
+
+  @media (max-width: 768px) {
+    left: 20%;
+    top: 240px;
+  }
 }
 .subtitle {
   position: relative;
@@ -49,7 +55,6 @@
   position: relative;
   width: 200px;
   height: 42px;
-  color: black;
   top: 250px;
   padding: 5px;
   background: #dcb315;
@@ -59,13 +64,24 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+
+.botoes {
+  position: relative;
+  top: 250px;
+  padding: 5px;
+
+  button {
+    padding-left: 30px;
+    margin-left: 20px;
+  }
+}
 .buttonBuy:hover {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
-  color: black;
+  color: #ffffff;
 }
 .sublim {
   width: 25%;
@@ -113,5 +129,31 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
+  }
+}
+.outlined {
+  border: 0;
+  background: transparent;
+  border: 1px solid var(--purple);
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background: var(--purple);
+  }
+}
+
+.filled {
+  border: 0;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: var(--purple);
+  transition: filter 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(0.8);
   }
 }

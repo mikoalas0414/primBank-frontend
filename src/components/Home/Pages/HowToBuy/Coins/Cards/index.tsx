@@ -5,9 +5,8 @@ import { Row, Col } from 'react-bootstrap'
 import Metamask from '../../../../../../assets/Coins/metamask.svg'
 import Eth from '../../../../../../assets/Coins/ethereum.png'
 import cake from '../../../../../../assets/Coins/cake.png'
-import PrimBank from '../../../../../../assets/Coins/PrimBank.png'
+import Primbank from '../../../../../../assets/Coins/PrimBank.png'
 import styled from 'styled-components'
-import { fontWeight } from '@material-ui/system'
 
 export const Image = styled.div`
   position: relative;
@@ -47,11 +46,12 @@ export const TextContent = styled.div`
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    color: #ffffff;
+    color: black;
 
     a {
       text-decoration: none;
-      color: #c38bff;
+      color: black;
+      font-weight: bold;
     }
   }
 `
@@ -81,19 +81,12 @@ export function CardA() {
             </Col>
             <Col xs={12} md={8}>
               <TextContent>
-                <p style={{ color: 'black' }}>
-                  Baixe e configure MetaMask ou TrustWallet
-                </p>
-                <p style={{ color: 'black', marginBottom: '80px' }}>
-                  Baixar{' '}
-                  <a
-                    style={{ color: 'black', fontWeight: 'bold' }}
-                    href="https://metamask.io/"
-                  >
-                    MetaMask
-                  </a>{' '}
-                  (uma carteira criptográfica na forma de uma extensão do
-                  navegador) ou TrustWallet (um aplicativo para o seu telefone).
+                <p>Download & setup MetaMask or TrustWallet</p>
+                <p>
+                  Download <a href="https://metamask.io/">MetaMask</a> (a crypto
+                  wallet in form of a browser extension) or TrustWallet (an app
+                  for your phone). Make sure you are connected to Ethereum
+                  MainNet.{' '}
                 </p>
               </TextContent>
             </Col>
@@ -129,13 +122,11 @@ export function CardB() {
             </Col>
             <Col xs={12} md={8}>
               <TextContent>
-                <p style={{ color: 'black' }}>
-                  Compre e envie Ether para MetaMask
-                </p>
-                <p style={{ color: 'black' }}>
-                  Compre Ether ou BNB em uma exchange (ou seja, Binance, Kraken,
-                  Coinbase etc.). Transfira o Ether para o endereço da sua
-                  carteira MetaMask. Os endereços Ethereum começam com "0x".{' '}
+                <p>Buy and send Ether to MetaMask</p>
+                <p>
+                  Buy Ether on an exchange (i.e. Binance, Kraken, Coinbase
+                  etc.). Transfer the Ether to your MetaMask wallet address.
+                  Ethereum addresses start with a "0x".{' '}
                 </p>
               </TextContent>
             </Col>
@@ -171,19 +162,12 @@ export function CardC() {
             </Col>
             <Col xs={12} md={8}>
               <TextContent>
-                <p style={{ color: 'black', fontWeight: 'bold' }}>
-                  Vá para PancakeSwap e troque por $PrimBank
-                </p>
-                <p style={{ color: 'black' }}>
-                  <a
-                    style={{ fontWeight: 'bold', color: 'black' }}
-                    href="https://pancakeswap.finance/"
-                  >
-                    Clique aqui{' '}
-                  </a>{' '}
-                  para ir para PancakeSwap ou use este endereço para selecionar
-                  PrimBank. Defina a tolerância de deslizamento para 12% (às
-                  vezes pode ser um pouco mais, dependendo da demanda).{' '}
+                <p>Head on to PancakeSwap and swap for $Primbank</p>
+                <p>
+                  <a href="https://pancakeswap.finance/">Click here </a> to head
+                  on over to PancakeSwap or use this address to select Primbank.
+                  Set the slippage tolerance to 12% (sometimes it may be a bit
+                  more, depending on how much demand there is).{' '}
                 </p>
               </TextContent>
             </Col>
@@ -214,18 +198,15 @@ export function CardD() {
           <Row>
             <Col xs={12} md={4}>
               <Image>
-                <img src={PrimBank} alt="Metamask" />
+                <img src={Primbank} alt="Metamask" />
               </Image>
             </Col>
             <Col xs={12} md={8}>
               <TextContent>
-                <p style={{ color: 'black' }}>
-                  Procure $PrimBank e Seja investidor
-                </p>
-                <p style={{ color: 'black' }}>
-                  Troque o BNB pelo PrimBank. Agora você precisa adicionar o
-                  PrimBank ao seu MetaMask ou Trust Wallet para visualizar seu
-                  $PrimBank.
+                <p>View $Primbank and HODL</p>
+                <p>
+                  Swap Ether for Primbank. Now you need to add Primbank to your
+                  MetaMask or Trust Wallet to view your $Primbank. Lastly HODL!{' '}
                 </p>
               </TextContent>
             </Col>

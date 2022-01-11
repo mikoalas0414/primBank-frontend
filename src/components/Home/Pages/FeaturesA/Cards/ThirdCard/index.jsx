@@ -22,19 +22,22 @@ export default function ThirdCard() {
           <Col
             md={12}
             className="d-flex justify-content-center"
-            style={{ padding: '40px' }}
+            style={{ padding: '40px', color: 'black' }}
           >
-            <h2 className={styles.titleCard}>Reivindicar e ou Reinvestir</h2>
+            <h2 style={{ color: 'black' }} className={styles.titleCard}>
+              Reivindicar e ou Reinvestir
+            </h2>
           </Col>
         </Row>
         <Row>
           <Col md={12} style={{ padding: '40px' }}>
             <p
+              style={{ color: 'black' }}
               className={styles.subTitleCard + ' d-flex justify-content-center'}
             >
-              Os investidores do PrimBank têm a oportunidade de reivindicar seus
-              doláres BUSD ou reivindicar e reinvestir no PrimBank com 10% de
-              desconto.
+              Os detentores do Primbank têm a oportunidade de reivindicar sua
+              Eth ou reivindicar e reinvestir no Primbank com um desconto de
+              10%.
             </p>
           </Col>
         </Row>

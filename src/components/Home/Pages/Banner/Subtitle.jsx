@@ -1,4 +1,4 @@
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 import { Row, Col, Container } from 'react-bootstrap'
 
 export function SubTitle() {
@@ -10,7 +10,9 @@ export function SubTitle() {
             <Col xs={12}>
               {' '}
               <p className={styles.subtitle + ' d-flex justify-content-center'}>
-                The PrimBank Protocol is a Community inspired DeFI Experiment
+                O Protocolo Primbank é um o maior benefício para todos
+                assinantes dos principais serviços do GP, Staage, DNAClass e
+                Finclass.
               </p>
             </Col>
             <Col xs={12}>
@@ -18,19 +20,13 @@ export function SubTitle() {
                 className={
                   styles.subtitle_02 + ' d-flex justify-content-center'
                 }
-              >
-                {' '}
-                built on Binance Smart Chain
-              </p>
+              ></p>
 
               <p
                 className={
                   styles.subtitle_mobile + ' d-flex justify-content-center'
                 }
-              >
-                The PrimBank Protocol is a Community inspired DeFI Experiment,
-                built on Binance Smart Chain
-              </p>
+              ></p>
             </Col>
           </Row>
         </Container>

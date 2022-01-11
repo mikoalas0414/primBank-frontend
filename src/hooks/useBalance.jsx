@@ -100,3 +100,27 @@ export const useRewardsbalance = (address, decimals = '18') => {
     secondsUntilAutoClaimAvailable,
   }
 }
+
+export const useTotalRewards = (address, decimals = '18') => {
+  const tokenAddress = '0x3039f0774E486CcC89bc66dE942C35ca6f296d4A'
+  const contract = useToken(tokenAddress, PRIMBANK_ABI.abi)
+  const [balance, setBalance] = useState(undefined)
+  const [totalRewards, setTotalRewards] = useState(undefined)
+  const { fastRefresh } = useRefresh()
+
+  useEffect(() => {
+    const fetch = async () => {
+      contract.options.address = '0x3039f0774E486CcC89bc66dE942C35ca6f296d4A'
+      const bal = await contract.methods.getTotalDividendsDistributed().call()
+
+      setBalance(new BigNumber(bal))
+      setTotalRewards(toLower(bal, decimals).toNumber().toFixed(2))
+    }
+    if (contract) {
+      fetch()
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [contract, fastRefresh])
+
+  return { balance, totalRewards }
+}

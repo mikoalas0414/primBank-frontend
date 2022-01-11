@@ -25,33 +25,33 @@ export function Footer() {
             <Logo src={PrimBank} alt="PrimBank logo" />
           </Col>
           <Col md={2}>
-            <h5 className={styles.title}>Contact</h5>
+            <h5 className={styles.title}>Contato</h5>
             <p className={styles.parag}>Ferneberga House</p>
             <p className={styles.parag}>Alexandra Road</p>
             <p className={styles.parag}>Farnborough </p>
             <p className={styles.parag}>GU14 6DQ</p>
           </Col>
           <Col md={2}>
-            <h5 className={styles.title}>Connect</h5>
+            <h5 className={styles.title}>Conectar</h5>
             <p className={styles.parag}>hello@PrimBank </p>
             <p className={styles.parag}>+44 (0)330 133 0770</p>
           </Col>
           <Col md={3}>
-            <h5 className={styles.title}>Small Print</h5>
-            <p className={styles.parag}>Privacy Policy</p>
-            <p className={styles.parag}>Terms & Conditions</p>
-            <p className={styles.parag}>Hosting Terms & Conditions</p>
-            <p className={styles.parag}>Website Terms & Conditions</p>
-            <p className={styles.parag}>Manage Cookies</p>
+            <h5 className={styles.title}>Serviços</h5>
+            <p className={styles.parag}>Política de Privacidade</p>
+            <p className={styles.parag}>termos e Condições</p>
+            <p className={styles.parag}>Termos e condições de hospedagem</p>
+            <p className={styles.parag}>Termos e condições do site</p>
+            <p className={styles.parag}>Gerenciar cookies</p>
           </Col>
           <Col md={3}>
             <form onSubmit={handleSubmit(onSubmit)}>
-              <h5 className={styles.formTitle}>Subscribe to our newsletter</h5>
+              <h5 className={styles.formTitle}>Assine a nossa newsletter</h5>
               <input clasName={styles.inputbutton} {...register('you mail')} />
 
               <p>{result}</p>
               <button type="submit">
-                <span>SUBSCRIBE</span>
+                <span>SE INSCREVER</span>
               </button>
             </form>
           </Col>

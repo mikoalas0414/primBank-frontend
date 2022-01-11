@@ -12,7 +12,6 @@ export default function FirstCard() {
         flexWrap: 'wrap',
         '& > :not(style)': {
           m: 1,
-          color: 'black',
           width: 355,
           height: 400,
           backgroundColor: '#DCB315',
@@ -26,19 +25,20 @@ export default function FirstCard() {
             className="d-flex justify-content-center"
             style={{ padding: '40px' }}
           >
-            <h2 className={styles.titleCard}>
-              10% BNB de reflexão é depositado no PrimBank Vault
+            <h2 className={styles.titleCard} style={{ color: 'black' }}>
+              10% BNB refletidos são depositado no Primbank Vault.
             </h2>
           </Col>
         </Row>
         <Row>
           <Col md={12} style={{ padding: '40px' }}>
             <p
+              style={{ color: 'black' }}
               className={styles.subTitleCard + ' d-flex justify-content-center'}
             >
-              10% de cada compra/venda é depositado no PrimBank Vault pronto
-              para ser redistribuído e reivindicado pelos investidores do
-              PrimBank que ganham e reivindicar doláres.
+              10% de cada compra/venda é depositado no Primbank Vault pronto
+              para ser redistribuído e reivindicado pelos titulares do Primbank
+              que ganham e reivindicar BNB.
             </p>
           </Col>
         </Row>

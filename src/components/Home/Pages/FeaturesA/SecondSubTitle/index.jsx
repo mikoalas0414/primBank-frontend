@@ -3,8 +3,9 @@ import styles from './styles.module.scss'
 export function SecondSubTitle() {
   return (
     <h4 className={styles.SecondSubTitle + ' d-flex justify-content-center'}>
-      Faça parte do grupo de pessoas que vivem com mais liberdade, trabalhando
-      com o que amam e fazendo dinheiro de forma escalável e exponencial
+      É nosso objetivo oferecer opções DeFi que rendem juros aos detentores do
+      Primbank alavancando plataformas de empréstimo estabelecidas - para ganhar
+      juros sobre o Éter refletido no Vault.
     </h4>
   )
 }

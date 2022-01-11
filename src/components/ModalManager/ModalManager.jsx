@@ -1,5 +1,5 @@
 import React from 'react'
-import CloseIcon from '@material-ui/core/Icon'
+import CloseIcon from '@material-ui/icons/Close'
 import CustomCard from '../CustomCard/CustomCard'
 import { useConfig } from '../../contexts/configContext'
 import styles from './ModalManager.module.css'
@@ -36,10 +36,10 @@ const ModalManager = ({ open, close, ...props }) => {
       parentSelector={() => document.body}
     >
       <CloseIcon
-        color="black"
         className={config.darkMode ? styles.darkCloseIcon : styles.closeIcon}
         fontSize="small"
         onClick={close}
+        style={{ backgroundColor: 'white', color: 'black' }}
       />
       {config.darkMode ? (
         <CustomCard style={{ overflow: 'auto' }}>{props.children}</CustomCard>

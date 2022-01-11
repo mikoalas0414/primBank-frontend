@@ -1,4 +1,4 @@
-import './style.scss'
+import './styles.scss'
 
 interface HistoryProps {
   data: HistoryRegister[]
@@ -8,7 +8,7 @@ interface HistoryRegister {
   id: number
   date: string
   usdt: String
-  PrimBank: string
+  Primbank: string
 }
 
 export function History({ data }: HistoryProps) {
@@ -20,7 +20,7 @@ export function History({ data }: HistoryProps) {
         <div id="custom-table-header">
           <p>Date</p>
           <p>USDT</p>
-          <p>PrimBank</p>
+          <p>Primbank</p>
         </div>
 
         <div id="custom-table-data">
@@ -28,7 +28,7 @@ export function History({ data }: HistoryProps) {
             <div id="custom-data" key={history.id}>
               <p>{history.date}</p>
               <p>${history.usdt}</p>
-              <p>{history.PrimBank}</p>
+              <p>{history.Primbank}</p>
             </div>
           ))}
         </div>

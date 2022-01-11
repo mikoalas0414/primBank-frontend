@@ -1,8 +1,7 @@
 import { Title } from './Title'
 import { SubTitle } from './Subtitle'
-import { Paragraph } from './Paragraph'
-import { Buttons } from './Buttons/index'
-import styles from './styles.module.css'
+import { Button } from './Button'
+import styles from './styles.module.scss'
 
 export function Banner() {
   return (
@@ -11,8 +10,11 @@ export function Banner() {
       <div className={styles.container_Banner}>
         <Title />
         <SubTitle />
-        <Paragraph />
-        <Buttons />
+
+        <div className={styles.botoes + ' d-flex justify-content-center'}>
+          <Button text="BUY NOW" filled />
+          <Button text="CLAIM REWARDS" outlined />
+        </div>
       </div>
     </>
   )

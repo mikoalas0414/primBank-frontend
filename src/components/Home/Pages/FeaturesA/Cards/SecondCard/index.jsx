@@ -24,7 +24,7 @@ export default function SecondCard() {
             className="d-flex justify-content-center"
             style={{ padding: '40px' }}
           >
-            <h2 className={styles.titleCard}>
+            <h2 style={{ color: 'black' }} className={styles.titleCard}>
               Anti-Dump exclusivo 'Mecanismo de carteira com bloqueio de tempo'
             </h2>
           </Col>
@@ -32,6 +32,7 @@ export default function SecondCard() {
         <Row>
           <Col md={12} style={{ padding: '40px' }}>
             <p
+              style={{ color: 'black' }}
               className={styles.subTitleCard + ' d-flex justify-content-center'}
             >
               Todas as vendas estão limitadas a uma soma agregada de ≤ 0,2% do

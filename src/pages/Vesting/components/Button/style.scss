@@ -1,29 +1,24 @@
-#vesting-button {
-  display: flex;
-  justify-content: stretch;
-  margin-top: 1rem;
-
-  button {
-    padding: 1rem;
-    background: var(--purple);
-    border: 0;
+#swap-button{
     width: 100%;
-    transition: 0.2s ease-in-out;
-
-    &.outlined {
-      background: transparent;
-      border: 1px solid var(--purple);
-
-      &:hover {
+    button{
+    
+        padding: 1rem;
+        border: 0;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
         background: var(--purple);
-        color: black;
-      }
-    }
 
-    &.default {
-      &:hover {
-        filter: brightness(0.8);
-      }
+        transition: 0.2s ease-in-out;
+
+        &:hover{
+            filter: brightness(0.8);
+        }
+        
+        .fa-chevron-down{
+            margin-left: 0.5rem;
+        }
     }
-  }
 }

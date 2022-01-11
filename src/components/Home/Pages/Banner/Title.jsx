@@ -1,6 +1,6 @@
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 import { Col } from 'react-bootstrap'
-import title from '../../../../assets/byPrimbank/Title.png'
+import title from '../../../../assets/favicon.png'
 export function Title() {
   return (
     <Col md={12}>

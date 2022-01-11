@@ -64,6 +64,44 @@
     }
 }
 
-@media screen {
-    
+@media (max-width: 768px) {
+    .claim-container{
+        
+        #banner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p{
+                text-align: center;
+            }
+        }
+
+        #claim-area{
+            position: relative;
+
+
+            .grid-2-col#first-section{
+               display: flex;
+               flex-direction: column;
+               margin-bottom: 6rem;
+            }
+
+            .grid-2-col#second-section{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                height: 85vh;
+
+                #banked-history{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                button{
+                    position: absolute;
+                }
+            }
+
+        }
+    }
 }

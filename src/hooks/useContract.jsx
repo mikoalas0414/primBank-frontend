@@ -19,6 +19,7 @@ export const useToken = (address) => {
     [web3],
   )
 }
+
 export const useERC20 = (address) => {
   const { web3 } = useWeb3()
   return useMemo(() => getContract(ERC20_ABI, address, web3), [address, web3])

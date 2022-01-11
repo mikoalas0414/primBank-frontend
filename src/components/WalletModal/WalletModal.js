@@ -22,9 +22,7 @@ export const WalletModal = () => {
 
   return (
     <div className={style.root}>
-      <p className={config.darkMode ? style.darkHeading : style.heading}>
-        Connect Wallet
-      </p>
+      <p className={style.mainTitle}>Connect Wallet</p>
       <div className={style.divider} />
       <div spacing={1} className={style.grid}>
         {wallets

@@ -1,66 +1,66 @@
-import { Button } from './components/Button'
-import { History } from './components/History'
+import { Button } from './Button'
+import { History } from './Dashboard/History'
 import './style.scss'
 
-export function Vesting() {
+export function VestingPage() {
   const fakeHistoryData = [
     {
       id: 1,
       date: '00/00/0000',
       usdt: '10.00',
-      PrimBank: 'yes',
+      Primbank: 'yes',
     },
     {
       id: 2,
       date: '00/00/0000',
       usdt: '10.00',
-      PrimBank: 'yes',
+      Primbank: 'yes',
     },
     {
       id: 3,
       date: '00/00/0000',
       usdt: '10.00',
-      PrimBank: 'yes',
+      Primbank: 'yes',
     },
     {
       id: 4,
       date: '00/00/0000',
       usdt: '10.00',
-      PrimBank: 'yes',
+      Primbank: 'yes',
     },
     {
       id: 5,
       date: '00/00/0000',
       usdt: '10.00',
-      PrimBank: 'yes',
+      Primbank: 'yes',
     },
     {
       id: 6,
       date: '00/00/0000',
       usdt: '10.00',
-      PrimBank: 'yes',
+      Primbank: 'yes',
     },
     {
       id: 7,
       date: '00/00/0000',
       usdt: '10.00',
-      PrimBank: 'yes',
+      Primbank: 'yes',
     },
     {
       id: 8,
       date: '00/00/0000',
       usdt: '10.00',
-      PrimBank: 'yes',
+      Primbank: 'yes',
     },
   ]
 
   return (
     <div id="vesting">
       <h1>
-        PrimBank<span>Swap</span>
+        Primbank<span>Swap</span>
       </h1>
       <p>
-        <span>by</span>PrimBank.
+        <span>by</span>Primbank.
       </p>
 
       <div class="section-1">

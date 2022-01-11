@@ -1,12 +1,14 @@
 import './style.scss'
-import {Button} from '../Button'
+import { Button } from '../../../Dashboard/components/Button'
+import { useEagerConnect, useWeb3 } from '../../../../main/index'
 
-export function StartConnection(){
-
-    return(
-        <div id="connect-area">
-            <p>Connect Your Wallet To Get Started</p>
-            <Button text="Connect"/>
-        </div>
-    )
+export function StartConnection() {
+  useEagerConnect()
+  const { connected } = useWeb3()
+  return (
+    <div id="connect-area">
+      <p>Conecte sua carteira para começar</p>
+      <Button text={connected ? 'Desconectar' : 'Conectar'} />
+    </div>
+  )
 }

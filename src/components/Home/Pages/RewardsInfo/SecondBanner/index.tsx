@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import subl from '../../../../../assets/Ret01.png'
+import { Link } from 'react-router-dom'
 
 export const Title = styled.div`
   position: relative;
@@ -62,7 +63,8 @@ export const Button = styled.button`
     line-height: 22px;
     /* identical to box height */
     text-align: center;
-    color: #ffffff;
+    color: black;
+    font-weight: bold;
   }
 `
 export function SecondBanner() {
@@ -70,9 +72,9 @@ export function SecondBanner() {
     <>
       <Title>
         <h2>
-          Painel fácil de usar. para ver e reclamar <br />{' '}
+          Painel fácil de usar. para ver e reclamar Ganhos em USDT. <br />{' '}
           <span>
-            USDT earnings. <img src={subl} alt="" />
+            Ganhos em USDT. <img src={subl} alt="" />
           </span>
         </h2>
       </Title>
@@ -81,11 +83,11 @@ export function SecondBanner() {
           Conecte sua carteira e reivindique suas recompensas sem problemas.
         </p>
       </SubTitle>
-      <Button>
-        <span style={{ color: 'black', fontWeight: 'bold' }}>
-          Ir para DASHBOARD
-        </span>
-      </Button>
+      <Link to="/dashboard" style={{ textDecoration: 'none' }}>
+        <Button>
+          <span>ABRIR DASHBOARD</span>
+        </Button>
+      </Link>
     </>
   )
 }
