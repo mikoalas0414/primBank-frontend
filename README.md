@@ -8,7 +8,7 @@
     <img src="https://github.com/skyxcripto/primBank-frontend/blob/main/public/print.png" alt="Logo">
   </a>
 
-  <h3 align="center">Project Test OsPrimos | PrimBank Front End Dapp </h3>
+  <h3 align="center">Project Test | PrimBank Front End Dapp </h3>
 </p>
 
 - Prints 
